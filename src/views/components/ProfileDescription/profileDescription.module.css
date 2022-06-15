@@ -1,0 +1,11 @@
+.container{
+     padding: 100px 5%;
+     
+}
+
+ .icon{
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      outline: 2px solid var(--blue--dark);
+ }

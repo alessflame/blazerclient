@@ -1,0 +1,7 @@
+.commentTextArea{
+     resize: none;
+     width: 250px;
+     height: 60px;
+     outline: none;
+     border: 2px solid var(--blue--dark);
+}

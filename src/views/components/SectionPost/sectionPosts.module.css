@@ -1,0 +1,28 @@
+.container{
+     display: flex;
+     flex-direction: column-reverse;
+     width: 100%;
+     align-items: center;
+     padding-bottom: 60px;
+     margin-bottom: 20px;
+     
+
+}
+
+
+.containerWrap{
+     display: flex;
+     justify-content: center;
+     
+     margin: 25px;
+     flex-wrap: wrap;
+
+}
+
+@media only screen and(max-width:600px) {
+     .containerWrap *{
+     margin: 5px;
+     justify-self: flex-start;
+}
+}
+

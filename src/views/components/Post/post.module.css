@@ -1,0 +1,116 @@
+
+
+.post{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     border-radius: 5px;
+     position: relative;
+     box-shadow: 1px 0 2px rgb(186, 181, 181);
+     padding: 20px 25px;
+     margin: 30px 5px;
+     border: 2px solid var(--white--light);
+     width: 400px;
+     padding-bottom: 30px;
+     border-bottom: 0;;
+
+    
+}
+.post::after{
+     content: " ";
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 17px;
+     background-color: var(--blue--light);
+     bottom: 0;
+     left: -1px;
+     border-bottom-right-radius: 5px;
+     border-bottom-left-radius: 5px;
+     margin: 0;
+     border: 0;
+     padding: 0 2px;
+     outline: 0;
+
+}
+
+.headPost, .postArticle{
+     margin-bottom:10px; 
+    
+}
+
+ .author{
+     margin-bottom: 5px;
+     margin-left: 5px;
+      font-size: 23px;
+      color: var(--blue--light);
+      text-decoration: none;
+ }
+
+ .textArticle{
+      color: var(--link--modecolor);
+      font-size: 20px;
+      text-decoration: none; 
+      padding: 15px 4px;
+      padding-bottom: 0;
+     
+ }
+
+ .postImage{
+      margin-top: 10px;
+      width: 100%;
+ }
+
+ .footPost{
+      margin-top: 10px;
+
+ }
+
+ .blazeIcon , .blazeIconBlazed{  
+      padding: 3px 5px;
+      font-size: 45px;
+      color:var(--blue--light);
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+
+ .blazeIconBlazed{
+      color: var(--blue--green);
+ }
+
+ .commentIcon{
+     padding: 3px 5px;
+      font-size: 40px;
+      color:var(--blue--light);
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+ }
+
+ .blazeIcon:hover , .commentIcon:hover{
+      opacity: 0.8;
+ }
+
+.icon{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     outline: 1px solid var(--blue--dark);
+}
+
+
+.sectionComments{
+
+     width: 100%;
+     margin: 5px 10px;
+     display: flex;
+     flex-direction: column;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+     .post{
+          width: 95%;
+     }
+     
+}

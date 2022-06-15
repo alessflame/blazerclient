@@ -1,0 +1,16 @@
+.container{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-top: 50px;
+     margin: 10px 70px;
+     color: var(--blue--dark);
+
+}
+
+
+@media only screen and (max-width:600px) {
+     .container{
+          margin: 20px 10px;
+     }
+}

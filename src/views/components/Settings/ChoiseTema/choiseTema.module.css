@@ -1,0 +1,50 @@
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding-bottom: 150px;
+}
+
+
+.sectionLight, .sectionDark{
+     margin: 0 10px;
+    position: relative;
+     width: 200px;
+     height: 85px;
+     padding: 10px 30px;
+     border: 2px solid var(--white--light);
+     font-size: 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-weight: 600;
+
+}
+
+.sectionLight:hover, .sectionDark:hover{
+
+     background-color: var(--blue--light);
+}
+
+.sectionLight::after{
+     content: " ";
+     display: block;
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     background-color: var(--white--light);
+     border-radius: 50%;
+     
+}
+
+.sectionDark::after{
+     content: " ";
+     display: block;
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     background-color: var(--black--dark);
+     border-radius: 50%;
+
+     
+}

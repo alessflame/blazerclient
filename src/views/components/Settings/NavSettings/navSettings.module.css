@@ -1,0 +1,25 @@
+.navSettings{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     padding-top: 20vh;
+}
+
+.navSettings a{
+
+     margin: 15px 0;
+     height: 40px;
+     padding: 5px 15px;
+     font-size: 25px;
+     text-decoration: none;
+     color: var(--blue--light);
+
+     
+
+}
+
+.navSettings a:hover{
+
+     background-color: var(--blue--light);
+     color: var(--white--light);
+}

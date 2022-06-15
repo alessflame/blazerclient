@@ -1,0 +1,24 @@
+html {
+  background-color: var(--white--light);
+}
+
+.dashboardContainer {
+  margin: 0 15%;
+  border-radius: 10px;
+}
+
+.dashboard {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboardContainer {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashboardContainer {
+    margin: 0 0;
+  }
+}

@@ -1,0 +1,25 @@
+.form{
+     display: flex;
+     flex-direction: column;
+     padding: 20px 20px;
+     background-color: rgba(255, 244, 244, 0.929);
+     font-size: 25px;
+     padding: 45px 30px
+}
+
+input{
+    
+     margin: 10px 0;
+}
+
+
+.sectionButton{
+     margin-bottom: 15px;
+}
+.sectionButton h3{
+     margin-bottom: 20px;
+}
+
+
+
+

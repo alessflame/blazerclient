@@ -1,0 +1,143 @@
+.travel{
+     color: var( --white--light);
+     width: 380px;
+     height:300px;
+     margin: 25px 10px;
+     padding: 5px 0;
+     position: relative;
+     outline: 2px solid var(--white--light);
+     border-radius: 8px;
+     
+}
+.image{
+     opacity:0.8;
+     border-radius: 8px;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 0;
+     height: 300px;
+     background-color: rgba(3, 3, 3, 0.858);
+     mix-blend-mode:normal; 
+     
+}
+
+
+.travelBox{
+     display: flex;
+     flex-direction: column;
+     position: relative;
+
+}
+
+.title{
+     color: var(--white--light);
+     text-shadow: 1px 1px 1px rgba(156, 145, 145, 0.863);
+     padding: 5px 5px;
+     border-radius: 4px;
+     font-size: 25px;
+     z-index: 1;
+     top: 0;
+     position: absolute;
+}
+
+.title::after{
+     z-index: 1;
+     content: " ";
+     width: 100%;
+     display: block;
+     position: absolute;
+     height: 3px;
+     background-color: var(--white--light);
+}
+
+.author{
+     z-index: 1;
+  background-color: transparent;
+     margin: 0 0 25px 5px;
+     font-size: 20px;
+     position: absolute;
+    top:50px;
+     
+}
+
+
+.countries{
+     position: absolute;
+     z-index: 1;
+     margin: 30px 0;
+     display: flex;
+     flex-wrap: wrap;
+     top: 60px;
+}
+
+.countries *{
+     z-index: 1;
+     margin: 4px 3px;
+     padding: 4px 7px;
+     border-radius: 10px;
+     font-weight: 400;
+     font-size: 14px;
+     background-color: var(--blue--dark);
+}
+
+.price{ 
+     z-index: 1;
+     top: 120px;
+     margin: 40px 5px;
+     font-size:15px;
+     background-color: var(--blue--dark);
+     color: var(--black--dark);
+     padding: 2px 5px;
+     border-radius: 10px;
+     width: 140px;
+     text-align: ce;
+     display: flex;
+ position: absolute;
+
+}
+
+.price *{
+    
+     z-index: 1;
+ 
+}
+
+
+.footTravel{
+     z-index: 1;
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     position: absolute;
+     background-color: var(--blue--dark);
+     bottom: 0;
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+   
+}
+
+.blazeIcon , .blazeIconBlazed{  
+     z-index: 1;
+     padding: 5px 7px;
+     font-size: 50px;
+     color:var(--white--light);
+     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.blazeIconBlazed{
+     color: var(--blue--green);
+}
+
+
+.blazeIcon:hover , .commentIcon:hover{
+     color: var(--blue--light);
+}
+
+
+@media screen and (max-width:600px) {
+     
+     .travel{width: 85%;}
+
+}

@@ -1,0 +1,77 @@
+.createPostBox{
+      width: 100%;
+      display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 125px 0;
+     border-bottom: 1px solid var(--white--light) ;
+     border-top: 1px solid var(--white--light) ;
+
+}
+
+.form{
+     padding: 15px 7px;
+     width: auto;
+     min-width: 290px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin: 20px 0;
+}
+
+.btnFile{
+     margin-top: 10px;
+     background-color: var(--blue--dark);
+     
+     position: relative;
+     display: flex;
+     justify-content: center;
+     width: auto;
+     border-radius: 4px;
+     padding: 3px 15px;
+     border:2px solid var(--white--light);
+}
+
+ .select{
+     border: 2px solid var(--white--light);
+     border-radius: 4px;
+     height: 30px;
+     margin-top: 10px;
+
+     color: var(--white--light);
+     background-color: var(--blue--dark);
+
+}
+
+.iconImage{
+     position: absolute;
+     text-align: center;
+     color: var(--white--light);
+     font-size: 30px;
+     border-radius: 10px
+     
+
+}
+
+.textarea{
+     resize:none;
+     width: 400px;
+     height: 140px;
+     font-size: 18px;
+     outline: none;
+     border: 3px solid var(--white--light);
+     padding: 3px 5px;
+     border-radius: 4px;
+}
+
+@media only screen and (max-width:600px){
+
+     .form{width: 90%;}
+
+     .textarea{
+          resize:none;
+          width: 95%;
+          font-size: 20px;
+     }
+     
+}
