@@ -6,6 +6,7 @@ I used **ReactJS** to build my App.
 ## tools
 - @redux/toolkit
 - axios
+- jwt-decode
 
 ## contact
 [LinkedIn](https://www.linkedin.com/in/francesco-aless)
