@@ -3,7 +3,7 @@ import { getToken } from "./token";
 
 export const fetchComments= async(id_post)=>{
      //prendo la lista dei commenti dal db
-     const commentsPost = await axios.get(`http://localhost:5000/comments/${id_post}`,{
+     const commentsPost = await axios.get(`https://blazertravels.herokuapp.com/comments/${id_post}`,{
           headers: {
            "Authorization": getToken()
           }
@@ -16,7 +16,7 @@ export const fetchComments= async(id_post)=>{
 
 export const getPostsByIdUser=async(id_user)=>{
      //funzione che ritorno tutti i post di un singolo utente
-     const postsUser = await axios.get(`http://localhost:5000/posts/author/${id_user}`,{
+     const postsUser = await axios.get(`https://blazertravels.herokuapp.com/posts/author/${id_user}`,{
           headers: {
            "Authorization": getToken()
           }
@@ -29,7 +29,7 @@ export const getPostsByIdUser=async(id_user)=>{
 
 export const getPostById=async(id_post)=>{
      //funzione che ritorno tutti i post di un singolo utente
-     const postData = await axios.get(`http://localhost:5000/posts/${id_post}`,{
+     const postData = await axios.get(`https://blazertravels.herokuapp.com/posts/${id_post}`,{
           headers: {
            "Authorization": getToken()
           }
@@ -41,7 +41,7 @@ export const getPostById=async(id_post)=>{
 
 
 export const getPhotoUser=async(id_user)=>{
-     const user = await axios.get(`http://localhost:5000/users/${id_user}`,{
+     const user = await axios.get(`https://blazertravels.herokuapp.com/users/${id_user}`,{
           headers: {
            "Authorization": getToken()
           }

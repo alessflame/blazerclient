@@ -18,7 +18,7 @@ export const getPostsFetch = () => async (dispatch) => {
 
   // console.log("token",getToken());
   try {
-    let response = await axios.get("http://localhost:5000/posts",{
+    let response = await axios.get("https://blazertravels.herokuapp.com/posts",{
       headers: {
        "Authorization": getToken()
       }
@@ -37,7 +37,7 @@ export const getPostsFetch = () => async (dispatch) => {
 export const getTravelsFetch = () => async (dispatch) => {
   //lista dei viaggi recuperati e poi inseriti nello state
   try {
-    let response = await axios.get("http://localhost:5000/travels",{
+    let response = await axios.get("https://blazertravels.herokuapp.com/travels",{
       headers: {
        "Authorization": getToken()
       }
@@ -55,7 +55,7 @@ export const getBlazesPosts = (id) => async (dispatch) => {
   //recupero un singolo blazepost
 
   try {
-    const response = await axios.get(`http://localhost:5000/blazes/${id}`,{
+    const response = await axios.get(`https://blazertravels.herokuapp.com/blazes/${id}`,{
       headers: {
        "Authorization": getToken()
       }
@@ -71,7 +71,7 @@ export const getBlazesTravels = (id) => async (dispatch) => {
 
   try {
     const response = await axios.get(
-      `http://localhost:5000/blazestravels/${id}`,{
+      `https://blazertravels.herokuapp.com/blazestravels/${id}`,{
         headers: {
          "Authorization": getToken()
         }
@@ -86,7 +86,7 @@ export const getUsersFetch = () => async (dispatch) => {
   //recupero la lista degli users e la memorizzo nello state
 
   try {
-    let response = await axios.get("http://localhost:5000/users",{
+    let response = await axios.get("https://blazertravels.herokuapp.com/users",{
       headers: {
        "Authorization": getToken()
       }
@@ -103,7 +103,7 @@ export const getCommentsFetch = () => async (dispatch) => {
   //lista dei commenti
 
   try {
-    let response = await axios.get("http://localhost:5000/comments",{
+    let response = await axios.get("https://blazertravels.herokuapp.com/comments",{
       headers: {
        "Authorization": getToken()
       }

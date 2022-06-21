@@ -14,7 +14,7 @@ export const updateUserInfo=async(form, id_user)=>{
      }
      const formJson= JSON.stringify(userInfo);
 
-     const response= await axios.patch(`http://localhost:5000/users/${id_user}`, formJson,
+     const response= await axios.patch(`https://blazertravels.herokuapp.com/users/${id_user}`, formJson,
      {headers:{
            'Content-Type': 'application/json',
            "Authorization": getToken()

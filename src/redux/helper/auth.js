@@ -16,7 +16,7 @@ export const getAuthUser = (form) => {
      try {
       user = JSON.stringify(user);
       // console.log(user);
-      const response = await axios.post("http://localhost:5000/auth", user, {
+      const response = await axios.post("https://blazertravels.herokuapp.com/auth", user, {
         headers: {
           "Content-Type": "application/json",
         },

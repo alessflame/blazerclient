@@ -10,7 +10,7 @@ export const createPost = async (form, user) => {
   formData.append("id_user", user.id_user);
   formData.append("author", user.author);
 
-  const response = await axios.post("http://localhost:5000/posts", formData ,{
+  const response = await axios.post("https://blazertravels.herokuapp.com/posts", formData ,{
     headers: {
       "Authorization": getToken()
     },
@@ -32,7 +32,7 @@ export const createComment = async(form, id_user, id_post)  => {
   const commentJson= JSON.stringify(comment)
   // comment.id_comment= uuidv4();
     
-  const response =await axios.post(`http://localhost:5000/comments/${id_post}`, commentJson, {
+  const response =await axios.post(`https://blazertravels.herokuapp.com/comments/${id_post}`, commentJson, {
     headers: {
       'Content-Type': 'application/json',
       "Authorization": getToken()
@@ -53,7 +53,7 @@ export const createTravel=async(form, user, countriesSelected)=>{
 
     //  console.log(formData.get("countries"));
    
-     const response = await axios.post("http://localhost:5000/travels", formData ,{
+     const response = await axios.post("https://blazertravels.herokuapp.com/travels", formData ,{
       headers: {
         "Authorization": getToken()
       },
