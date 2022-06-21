@@ -62,7 +62,7 @@ function Travel({
         <img
           src={
             (img_travel !== null) === true
-              ? `http://localhost:5000${img_travel}`
+              ? `https://blazertravels.herokuapp.com${img_travel}`
               : " "
           }
           className={stile.image}
