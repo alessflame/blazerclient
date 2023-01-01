@@ -11,7 +11,7 @@ function ProfileDescription({
   return (
     <div className={stile.container}>
       <img
-        src={`https://blazertravels.herokuapp.com${iconAvatar}`}
+        src={`https://blazerstravels.onrender.com${iconAvatar}`}
         className={stile.icon}
         alt="pic"
       />

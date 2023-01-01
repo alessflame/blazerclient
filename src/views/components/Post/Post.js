@@ -77,7 +77,7 @@ function Post({_id , id_user , author, content, img, country }) {
       <span className={stile.headPost}>
 
         {iconUser !== "" ?
-       <img className={stile.icon} src={`https://blazertravels.herokuapp.com${iconUser}`} alt="Pic" />
+       <img className={stile.icon} src={`https://blazerstravels.onrender.com${iconUser}`} alt="Pic" />
       : ""
       }
         
@@ -94,7 +94,7 @@ function Post({_id , id_user , author, content, img, country }) {
 
        {img !== undefined ?
         <img
-          src={(img !== undefined) ? `https://blazertravels.herokuapp.com${img}` : " "}
+          src={(img !== undefined) ? `https://blazerstravels.onrender.com${img}` : " "}
           alt="travel"
           className={stile.postImage}
         />  : null
