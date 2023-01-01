@@ -25,7 +25,7 @@ export const createUser = async (form, isUser) => {
   // console.log(user);
   //mando i dati in formato json
   const response = await axios.post(
-    "https://blazertravels.herokuapp.com/auth/register",
+    "https://blazerstravels.onrender.com/auth/register",
     user,
     {
       headers: {

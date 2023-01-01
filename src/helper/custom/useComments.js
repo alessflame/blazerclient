@@ -22,7 +22,7 @@ function useComments(id_post) {
 
       commentsResolved.push({
         id_comment: comment.id_comment,
-        image: `https://blazertravels.herokuapp.com${findUser.iconAvatar}`,
+        image: `https://blazerstravels.onrender.com${findUser.iconAvatar}`,
         username: findUser.username,
         content: comment.content,
       });

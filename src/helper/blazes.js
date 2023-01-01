@@ -27,7 +27,7 @@ export const deleteBlazesPost = async (id_user, id_post) => {
 
   // blaze= JSON.stringify(blaze);
   const request = await axios.delete(
-    `https://blazertravels.herokuapp.com/blazes/${id_user}/${id_post}`,{
+    `https://blazerstravels.onrender.com/blazes/${id_user}/${id_post}`,{
       headers: {
         "Authorization": getToken()
       },
@@ -47,7 +47,7 @@ export const createBlazeTravel = async (id_user, id_travel) => {
 
   blaze = JSON.stringify(blaze);
   const request = await axios.post(
-    "https://blazertravels.herokuapp.com/blazestravels",
+    "https://blazerstravels.onrender.com/blazestravels",
     blaze,
     {
       headers: {
@@ -68,7 +68,7 @@ export const deleteBlazesTravel = async (id_user, id_travel) => {
   //elimino un blazetravel
  
   const request = await axios.delete(
-    `https://blazertravels.herokuapp.com/blazestravels/${id_user}/${id_travel}`,{
+    `https://blazerstravels.onrender.com/blazestravels/${id_user}/${id_travel}`,{
       headers: {
         "Authorization": getToken()
       },
