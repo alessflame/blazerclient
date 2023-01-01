@@ -8,9 +8,11 @@ import commentsReducer from "./slices/commentsSlice.js";
 import blazesTravelsReducer from "./slices/blazesTravelsSlice";
 import temaReducer from "./slices/temaSlice";
 import modalReducer from "./slices/modalSlice";
+import loaderReducer from "./slices/loaderSlice";
 
 const store= configureStore({
      reducer:{
+          loader:loaderReducer,
           modal:modalReducer,
           tema: temaReducer,
           comments:commentsReducer,

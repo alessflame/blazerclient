@@ -6,7 +6,7 @@ function User({ _id, username, iconAvatar, isAgency }) {
   return (
     <div className={stile.container}>
       <section className={stile.user} key={_id}>
-        <img className={stile.icon} src={`https://blazertravels.herokuapp.com${iconAvatar}`} alt="iconAvatar" />
+        <img className={stile.icon} src={`https://blazerstravels.onrender.com${iconAvatar}`} alt="iconAvatar" />
         <Link to={`/dashboard/world/users/${_id}`}>{username}</Link>
       </section>
       {isAgency === true ? <samp>agenzia</samp> : " "}

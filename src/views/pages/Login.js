@@ -3,8 +3,13 @@ import LoginForm from "../components/Forms/LoginForm";
 import backgroundVideo from "../../assets/video/backgroundblaze.mp4";
 import "../../index.css";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import LoaderSpinner from "../components/LoaderSpinner/LoaderSpinner";
 
 function Login() {
+  const { loader } = useSelector((state) => state);
+  console.log(loader);
+
   return (
     <div className="loginPage">
       <h1
@@ -34,13 +39,14 @@ function Login() {
       >
         <LoginForm />
 
+        {loader.isLoad===true ? <LoaderSpinner/>: 
         <span className="registerSpan">
           {" "}
           Non hai un account?{" "}
           <Link style={{ color: "#1bb7ff", fontWeight: "600" }} to="/register">
             Registrati
           </Link>{" "}
-        </span>
+        </span>}
       </section>
     </div>
   );

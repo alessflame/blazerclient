@@ -2,13 +2,14 @@ import axios from "axios";
 import { login } from "../slices/authSlice";
 import jwt_decode from "jwt-decode";
 import {openModal} from "../slices/modalSlice";
+import { isLoading, notLoading } from "../slices/loaderSlice";
 
 export const getAuthUser = (form) => {
   return async (dispatch) => {
     //funzione che si occupa del login-> trova lo username nel db e memorizza i dati non sensibili
     //nello stato globale
+    dispatch(isLoading());
 
-   
       let user = {
         username: form.get("username"),
         password: form.get("password"),
@@ -28,9 +29,9 @@ export const getAuthUser = (form) => {
       const decodeJwt=await jwt_decode(response.data.token);
       dispatch(login({ ...decodeJwt }));
       }
-
       dispatch(openModal(await response.data.message));
-      
+      dispatch(notLoading());
+
       //dispatch dell'autenticazione
     } catch (e) {
      dispatch(openModal(e));
