@@ -8,7 +8,7 @@ import LoaderSpinner from "../components/LoaderSpinner/LoaderSpinner";
 
 function Login() {
   const { loader } = useSelector((state) => state);
-  console.log(loader);
+  // console.log(loader);
 
   return (
     <div className="loginPage">
