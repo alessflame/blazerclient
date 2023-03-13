@@ -130,7 +130,7 @@ function RegisterFormUser() {
                 </Link>{" "}
             </span>
             <span style={{ display: "flex", justifyContent: "center" }}>
-               {load? <LoadingSpinner /> : ""} 
+                {load ? <LoadingSpinner /> : ""}
             </span>
         </div>
     );
