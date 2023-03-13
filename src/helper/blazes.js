@@ -7,7 +7,7 @@ export const createBlazesPost = async (id_user, id_post) => {
   let blaze = { id_user, id_post };
 
   blaze = JSON.stringify(blaze);
-  const request = await axios.post("https://blazertravels.herokuapp.com/blazes", blaze, {
+  const request = await axios.post("https://blazerstravels.onrender.com/blazes", blaze, {
     headers: {
       "Content-Type": "application/json",
       "Authorization": getToken()
